@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="25dp"
+        android:id="@+id/add_editsound"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:layout_gravity="center"
+            android:src="@drawable/microphone"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+           android:textColor="#000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="语音心情记录"
+            android:textSize="20dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="25dp"
+        android:id="@+id/add_edittext"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/microphone"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="文字心情记录"
+            android:textSize="20dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
