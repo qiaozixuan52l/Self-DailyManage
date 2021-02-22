@@ -6,19 +6,19 @@
     android:id="@+id/layout_main"
     android:background="#FFF">
     <!-- Fragment内容显示的帧布局 -->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#25c0bc"
         android:orientation="horizontal"
-        android:padding="5dp">
+        android:padding="20dp"
+        >
 
         <ImageView
             android:id="@+id/main_more_btn"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
             android:src="@drawable/my"
 
             />
@@ -26,13 +26,12 @@
         <ImageView
             android:id="@+id/main_notification_btn"
             android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="285dp"
-            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
             android:src="@drawable/message"
 
             />
-    </LinearLayout>
+    </RelativeLayout>
 
 
     <LinearLayout
@@ -53,13 +52,13 @@
                 android:id="@+id/main_img_center"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-               android:layout_gravity="center"
+                android:layout_gravity="center"
                 android:src="@drawable/home_normal"
-                 />
+                />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/main_add"
+            android:id="@+id/main_addpublish"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_weight="1"
@@ -67,11 +66,10 @@
             android:orientation="vertical">
 
             <ImageView
-               android:id="@+id/main_img_add"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-               android:src="@drawable/add"
+                android:src="@drawable/add"
                 />
             <TextView
                 android:layout_width="match_parent"

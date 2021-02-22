@@ -16,12 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.editSound"/>
+        <activity android:name=".activity.editAudio"/>
         <activity android:name=".activity.editText"/>
         <activity android:name=".activity.myAccount"/>
         <activity android:name=".activity.myPublish"/>
+        <activity android:name=".activity.myAttention"/>
         <activity android:name=".activity.personalAbout"/>
+        <activity android:name=".activity.exitLogin"/>
+        <activity android:name=".activity.shiftAccount"/>
+        <activity android:name=".activity.userAccount"/>
+        <activity android:name=".activity.agoraingActivity"/>
 
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--播音-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 </manifest>

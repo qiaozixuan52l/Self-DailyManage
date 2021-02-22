@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.selfmanage.doily.R;
 
-public class myPublish extends AppCompatActivity {
+public class myThumb extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mypublish_activity);
+        setContentView(R.layout.mythumb_activity);
 
     }
 }

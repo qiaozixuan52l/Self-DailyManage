@@ -1,10 +1,12 @@
 package com.selfmanage.doily;
 
+import android.accounts.Account;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,10 +16,15 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.selfmanage.doily.activity.editSound;
+import com.selfmanage.doily.activity.editAudio;
 import com.selfmanage.doily.activity.editText;
-import com.selfmanage.doily.fragment.center;
-import com.selfmanage.doily.fragment.club;
+import com.selfmanage.doily.activity.myAccount;
+import com.selfmanage.doily.activity.myAttention;
+import com.selfmanage.doily.activity.myPublish;
+import com.selfmanage.doily.activity.myThumb;
+import com.selfmanage.doily.activity.personalAbout;
+import com.selfmanage.doily.fragment.centerFragment;
+import com.selfmanage.doily.fragment.clubFragment;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -38,14 +45,10 @@ public class MainActivity extends AppCompatActivity {
             if(select){
                 //被选中的图片指针
                 imageView.setImageResource(selectImage);
-//                textView.setTextColor(
-//                        Color.parseColor("#00FFFF"));
+
             }
             else{
                 imageView.setImageResource(normalImage);
-//                textView.setTextColor(
-//                        Color.parseColor("#000000"));
-
             }
         }
 
@@ -100,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         loadWindow();
         initData();
         setListener();
-        changeTab(hostTabId[0]);
+        changeTab(hostTabId[1]);
     }
     private void loadWindow(){
         settingMore=findViewById(R.id.main_more_btn);
@@ -154,16 +157,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void setFragment(){
-        map.get(hostTabId[0]).setFragment(new center());
-        map.get(hostTabId[1]).setFragment(new club());
+        map.get(hostTabId[0]).setFragment(new centerFragment());
+        map.get(hostTabId[1]).setFragment(new clubFragment());
 
     }
     private void setView() {
         ImageView centerView=findViewById(R.id.main_img_center);
-       // ImageView addpublishView=findViewById(R.id.main_img_add);
         ImageView clubView=findViewById(R.id.main_img_club);
         map.get(hostTabId[0]).setImageView(centerView);
-      //  map.get(hostTabId[1]).setImageView(addpublishView);
         map.get(hostTabId[1]).setImageView(clubView);
 
     }
@@ -185,15 +186,17 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
                 case R.id.main_club:{
+                    Log.e("为啥","俱乐部");
                     changeTab(hostTabId[1]);
                     break;
                 }
-                case R.id.main_add:{
+                case R.id.main_addpublish:{
+                    Log.e("为啥","编辑");
                     popSelectWindow();
                     break;
                 }
                 case R.id.add_editsound:{
-                    Intent intent=new Intent(MainActivity.this,editSound.class);
+                    Intent intent=new Intent(MainActivity.this,editAudio.class);
                     startActivity(intent);
 
                     break;
@@ -205,11 +208,54 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
                 case R.id.setting_acount:{
-                    Intent intent=new Intent(MainActivity.this,editSound.class);
+                    Log.e("为啥","账户");
+                    Intent intent=new Intent(MainActivity.this,myAccount.class);
                     startActivity(intent);
-
+                    break;
 
                 }
+                case R.id.setting_publish: {
+                    Log.e("为啥", "发布");
+                    Intent intent = new Intent(MainActivity.this,myPublish.class);
+                    startActivity(intent);
+                    break;
+                }
+                case R.id.setting_thumb: {
+                    Log.e("为啥", "关注");
+                    Intent intent = new Intent(MainActivity.this,myThumb.class);
+                    startActivity(intent);
+                    break;
+                }
+                //静面？？待定
+                case R.id.setting_about: {
+                    Log.e("为啥", "Doily");
+//                    Intent intent = new Intent(MainActivity.this, .class);
+//                    startActivity(intent);
+                    break;
+                }
+                case R.id.setting_attention: {
+                    Intent intent = new Intent(MainActivity.this,myAttention.class);
+                    startActivity(intent);
+
+                }
+                case R.id.setting_personal: {
+                    Log.e("为啥", "隐私");
+                    Intent intent = new Intent(MainActivity.this,personalAbout.class);
+                    startActivity(intent);
+                    break;
+                }
+                //静面？？待定
+                case R.id.setting_shiftaccount: {
+                    Log.e("为啥", "切换账号");
+                    Intent intent = new Intent(MainActivity.this,editAudio.class);
+                    startActivity(intent);
+                    break;
+                }
+
+
+
+
+
 
 
 
@@ -233,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
        addselectWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
         //设置点击popupWindow之外的屏幕，关闭popupWindow
         addselectWindow.setFocusable(true);
-        settingWindow.setOutsideTouchable(true);
+        addselectWindow.setOutsideTouchable(true);
         LinearLayout editSound=popupView.findViewById(R.id.add_editsound);
         LinearLayout editText=popupView.findViewById(R.id.add_edittext);
         Listener listener=new Listener();
@@ -279,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void setListener(){
         LinearLayout center=findViewById(R.id.main_center);
-        LinearLayout addpublish =findViewById(R.id.main_add);
+        LinearLayout addpublish=findViewById(R.id.main_addpublish);
         LinearLayout club=findViewById(R.id.main_club);
         Listener listener=new Listener();
         center.setOnClickListener(listener);
