@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     private void initPopupWindow(){
 
         View popupView = getLayoutInflater().inflate(R.layout.setting_window, null);
-        settingWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
+        settingWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT, true);
 
         //设置点击popupWindow之外的屏幕，关闭popupWindow
         settingWindow.setFocusable(true);
@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setImage(){
-        map.get(hostTabId[0]).setNormalImage(R.drawable.homenornal);
+        map.get(hostTabId[0]).setNormalImage(R.drawable.home_normal);
         map.get(hostTabId[0]).setSelectImage(R.drawable.home_selected);
         map.get(hostTabId[1]).setNormalImage(R.drawable.club_normal);
         map.get(hostTabId[1]).setSelectImage(R.drawable.club_selected);
@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                     changeTab(hostTabId[1]);
                     break;
                 }
-                case R.id.main_addpublish:{
+                case R.id.main_add:{
                     popSelectWindow();
                     break;
                 }
@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void setListener(){
         LinearLayout center=findViewById(R.id.main_center);
-        LinearLayout addpublish =findViewById(R.id.main_addpublish);
+        LinearLayout addpublish =findViewById(R.id.main_add);
         LinearLayout club=findViewById(R.id.main_club);
         Listener listener=new Listener();
         center.setOnClickListener(listener);

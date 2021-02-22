@@ -1,219 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="350dp"
-    android:layout_height="400dp"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:background="#25c0bc"
         android:orientation="vertical"
-        android:paddingTop="5dp"
-        android:background="#FF8EFAFC"
-        >
+        android:paddingTop="5dp">
+
         <ImageView
-            android:layout_gravity="center"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/d"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DOILY"
-            android:textSize="15dp"
             android:layout_gravity="center"
-            android:textColor="#FFF"
-            android:textStyle="bold"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/setting_acount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:background="#FFE0DDDD"
-        >
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/account"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:textSize="12dp"
-            android:paddingTop="3dp"
-            android:text="我的账户" />
-    </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-    <LinearLayout
-        android:id="@+id/setting_publish"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:background="#FFE0DDDD"
-        >
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/publishtag"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:textSize="12dp"
-            android:paddingTop="3dp"
-            android:text="我的心情簿（发布）" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/setting_thumb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:background="#FFE0DDDD"
-        >
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/thumbed"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:textSize="12dp"
-            android:paddingTop="3dp"
-            android:text="我的点赞" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/setting_attention"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFE0DDDD"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/publishtag" />
+            android:src="@drawable/d" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:text="我的关注"
+            android:layout_gravity="center"
+            android:text="DOILY"
             android:textColor="#FFF"
-            android:textSize="12dp" />
+            android:textSize="15dp"
+            android:textStyle="bold" />
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-    <LinearLayout
-        android:id="@+id/setting_personal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFE0DDDD"
-        android:orientation="horizontal"
-        android:padding="10dp">
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/setting" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/setting_acount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#edebeb"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/account" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="我的账户"
+                android:textColor="#383737"
+                android:textSize="18dp" />
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:text="我的隐私"
-            android:textColor="#FFF"
-            android:textSize="12dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/setting_about"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFE0DDDD"
-        android:orientation="horizontal"
-        android:padding="10dp">
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/setting" />
+        <LinearLayout
+            android:id="@+id/setting_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#edebeb"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/publishtag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:layout_gravity="center"
+                android:textColor="#383737"
+                android:text="我的心情簿（发布）"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#edebeb"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/thumbed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:layout_gravity="center"
+                android:textColor="#383737"
+                android:text="我的点赞"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_attention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#edebeb"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/publishtag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="我的关注"
+                android:layout_gravity="center"
+                android:textColor="#383737"
+                android:textSize="18dp" />
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:text="关于Doily"
-            android:textColor="#FFF"
-            android:textSize="12dp" />
-    </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-    <LinearLayout
-        android:id="@+id/setting_exit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFE0DDDD"
-        android:orientation="horizontal"
-        android:padding="10dp">
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/setting" />
+        <LinearLayout
+            android:id="@+id/setting_personal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#edebeb"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="我的隐私"
+                android:layout_gravity="center"
+                android:textColor="#383737"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_about"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#edebeb"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="关于Doily"
+                android:textColor="#383737"
+                android:textSize="18dp" />
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:text="退出登录"
-            android:textColor="#FFF"
-            android:textSize="12dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/setting_shiftaccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFE0DDDD"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/setting" />
-
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:background="#edebeb"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/setting_exit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:text="切换账号"
-            android:textColor="#FFF"
-            android:textSize="12dp" />
+            android:background="#edebeb"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:layout_gravity="center"
+                android:text="退出登录"
+                android:textColor="#383737"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_shiftaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#edebeb"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="3dp"
+                android:text="切换账号"
+                android:textColor="#383737"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:background="#edebeb"
+            android:layout_height="wrap_content" />
     </LinearLayout>
+
 </LinearLayout>
