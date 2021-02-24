@@ -30,6 +30,7 @@
         <activity android:name=".activity.userAccount"/>
         <activity android:name=".activity.agoraingActivity"/>
 
+
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 录音 -->
