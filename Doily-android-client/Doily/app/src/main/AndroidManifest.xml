@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.editAudio"/>
+        <activity android:name=".activity.lifeDaily"/>
+        <activity android:name=".activity.accountBook"/>
+        <activity android:name=".activity.concentration"/>
         <activity android:name=".activity.editText"/>
         <activity android:name=".activity.myAccount"/>
         <activity android:name=".activity.myPublish"/>
