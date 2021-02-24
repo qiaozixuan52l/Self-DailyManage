@@ -3,17 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg3"
+    android:background="@drawable/back1"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:alpha="0.7"
         android:padding="20dp">
         <ImageView
             android:layout_height="match_parent"
-            android:layout_width="30dp"
-            android:src="@drawable/back"
+            android:layout_width="25dp"
+            android:src="@drawable/back2"
             android:id="@+id/myaccount_back"/>
     </LinearLayout>
     <LinearLayout
@@ -41,11 +43,21 @@
             android:textColor="#FFFFFF"
             android:id="@+id/myaccount_nickName"
             />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/microphone"
+            android:layout_marginLeft="170dp"
+            android:id="@+id/myaccount_playaudio"
+
+
+            />
     </LinearLayout>
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="280dp"
         android:background="#FFFFFF"
         android:orientation="vertical"
         android:alpha="0.7">
@@ -54,82 +66,189 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:padding="10dp"
             >
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="账号"
+            android:gravity="center"
+            android:textColor="#383737"
             android:textSize="25dp"
             />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="账号"
+                android:text="13454344566"
                 android:gravity="center"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:textColor="#383737"
 
                 />
         </LinearLayout>
-        <LinearLayout
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="#908d8d"
+            />
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:padding="10dp"
             >
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="账号"
-                android:textSize="25dp"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="账号"
+                android:text="头像"
                 android:gravity="center"
+                android:textColor="#383737"
                 android:textSize="25dp"
                 />
-        </LinearLayout>
-        <LinearLayout
+            <ImageView
+                android:id="@+id/myaccount_reheadimg"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/headimg1"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:id="@+id/myaccount_reheadimgmore"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/more2"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="#908d8d"
+            />
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:padding="10dp"
             >
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="账号"
+                android:text="昵称"
+                android:gravity="center"
+                android:textColor="#383737"
                 android:textSize="25dp"
                 />
-        </LinearLayout>
-        <LinearLayout
+            <TextView
+                android:id="@+id/myaccount_renickName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="小可爱"
+                android:layout_marginRight="50dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#383737"
+                />
+            <ImageView
+                android:id="@+id/myaccount_renickNamemore"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/more2"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="#908d8d"
+            />
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:padding="10dp"
             >
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="账号"
+                android:text="简介"
+                android:gravity="center"
+                android:textColor="#383737"
                 android:textSize="25dp"
                 />
-        </LinearLayout>
-
-
-    </LinearLayout>
+            <TextView
+                android:id="@+id/myaccount_rebrief"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="暂无简介"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#383737"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:id="@+id/myaccount_rebriefmore"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/more2"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="#908d8d"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="语音签名"
+                android:gravity="center"
+                android:textColor="#383737"
+                android:textSize="25dp"
+                />
+            <TextView
+                android:id="@+id/myaccount_reaudiobrief"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="点此重录"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#383737"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:id="@+id/myaccount_reaudiobriefmore"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/more2"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="#908d8d"
+            />
+</LinearLayout>
 </LinearLayout>

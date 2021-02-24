@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/userback"
+    android:id="@+id/useraccount_backimg"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/useraccount_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/back2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/headimg1"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柯滢"
+            android:textSize="30dp"
+            android:textColor="#FFFFFf"
+            android:layout_marginRight="20dp"
+            android:id="@+id/useraccount_name"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/microphone"
+            android:id="@+id/useraccount_playaudio"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFf"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="落在黑色的泥沼"
+        android:id="@+id/useraccount_brief"
+        />
+<RelativeLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingTop="20dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/attention"
+        android:id="@+id/useraccount_attentionimg"
+        />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="ta的心情簿 >>"
+        android:textSize="16dp"
+        android:background="@drawable/shape1"
+        android:textColor="#FF7FF8F2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/useraccount_moreabout"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已关注"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:id="@+id/useraccount_attentiontag"
+        android:textColor="#FFF"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
