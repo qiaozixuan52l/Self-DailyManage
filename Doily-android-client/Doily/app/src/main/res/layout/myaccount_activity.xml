@@ -3,18 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back1"
+    android:background="@drawable/back3"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:alpha="0.7"
-        android:padding="20dp">
+        android:orientation="horizontal">
         <ImageView
-            android:layout_height="match_parent"
-            android:layout_width="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
             android:src="@drawable/back2"
             android:id="@+id/myaccount_back"/>
     </LinearLayout>
@@ -40,7 +39,7 @@
             android:text="小可爱"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#3a3a3a"
             android:id="@+id/myaccount_nickName"
             />
         <ImageView

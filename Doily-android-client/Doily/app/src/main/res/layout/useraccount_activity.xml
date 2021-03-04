@@ -69,7 +69,7 @@
         android:layout_height="40dp"
         android:text="ta的心情簿 >>"
         android:textSize="16dp"
-        android:background="@drawable/shape1"
+        android:background="#ffffff"
         android:textColor="#FF7FF8F2"
         android:layout_marginTop="5dp"
         android:layout_alignParentRight="true"

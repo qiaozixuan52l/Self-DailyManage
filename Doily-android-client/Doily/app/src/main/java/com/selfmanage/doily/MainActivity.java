@@ -270,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
         }else {
             initSelctPopWindow();
         }
-        addselectWindow.showAtLocation(findViewById(R.id.layout_main), Gravity.BOTTOM,0,0);
+        addselectWindow.showAtLocation(findViewById(R.id.main_addpublish), Gravity.BOTTOM,0,240);
 
 
     }

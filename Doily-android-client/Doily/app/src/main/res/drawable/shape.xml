@@ -3,7 +3,7 @@
     <!-- rectangle表示为矩形 -->
 
     <!-- 填充的颜色 -->
-    <solid android:color="#FF7FF8F2" />
+    <solid android:color="#5ecbd9" />
 
 
     <!-- android:radius 圆角的半径 -->
