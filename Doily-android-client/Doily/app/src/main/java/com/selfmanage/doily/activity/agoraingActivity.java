@@ -1,21 +1,12 @@
 package com.selfmanage.doily.activity;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.icu.text.AlphabeticIndex;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -128,10 +119,20 @@ public class agoraingActivity extends AppCompatActivity {
                     agoraing=false;
                     //todo:跳转到editAudio
                   //  Intent intent =new Intent(this,)
-                    Intent intent=new Intent(com.selfmanage.doily.activity.agoraingActivity.this,editAudio.class);
-                    intent.putExtra("filePath",filePath);
-                    startActivity(intent);
-                    finish();
+                    Intent myIntent=getIntent();
+                    if(myIntent.getStringExtra("source").equals("editAudio")) {
+                        Intent intent = new Intent(com.selfmanage.doily.activity.agoraingActivity.this, editAudio.class);
+                        intent.putExtra("filePath",filePath);
+                        startActivity(intent);
+                        finish();
+                    }
+                    else if(myIntent.getStringExtra("sourse").equals("myAccount")){
+                        Intent intent = new Intent(com.selfmanage.doily.activity.agoraingActivity.this, myAccount.class);
+                        intent.putExtra("filePath",filePath);
+                        startActivity(intent);
+                        finish();
+                    }
+                  break;
 
 
             }
@@ -207,7 +208,6 @@ public class agoraingActivity extends AppCompatActivity {
             }
 
     }
-
 
             private void StopRecord () {
                 if (recorder != null) {

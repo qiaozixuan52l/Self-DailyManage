@@ -10,9 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
-import com.selfmanage.doily.activity.accountBook;
-import com.selfmanage.doily.activity.lifeDaily;
-import com.selfmanage.doily.activity.concentration;
+
 import com.selfmanage.doily.R;
 
 import java.util.List;
@@ -42,21 +40,21 @@ public class clubFragment extends Fragment {
         lifeDaily.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), lifeDaily.class);
+                Intent intent = new Intent(getActivity(), com.selfmanage.doily.activity.lifeDaily.class);
                 startActivity(intent);
             }
         });
         accountBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), accountBook.class);
+                Intent intent = new Intent(getActivity(), com.selfmanage.doily.activity.accountBook.class);
                 startActivity(intent);
             }
         });
         concentration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), concentration.class);
+                Intent intent = new Intent(getActivity(), com.selfmanage.doily.activity.concentration.class);
                 startActivity(intent);
             }
         });

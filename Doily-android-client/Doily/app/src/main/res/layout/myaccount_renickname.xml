@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#25c0bc"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/reedit_nickName_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/backwhite" />
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:textColor="#FFF"
+            android:text="更改昵称"
+            />
+        <Button
+            android:id="@+id/reedit_nickName_save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#FFF"
+            android:textSize="18dp"
+            android:textColor="#25c0bc"
+            android:text="保  存"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/reedit_nickName"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="你的名字"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="好名字让你的朋友记住你"
+        />
+
+</LinearLayout>

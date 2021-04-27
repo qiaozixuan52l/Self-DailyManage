@@ -37,7 +37,7 @@
         android:background="#A5C3BFBF"
         android:layout_height="2dp"/>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/audio_edit_agoraclick">
     <ImageView
@@ -46,6 +46,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:id="@+id/audio_edit_agoraimgtag"
+        android:visibility="visible"
         android:src="@drawable/agoraclick"/>
         <TextView
             android:layout_marginTop="35dp"
@@ -53,7 +54,21 @@
             android:layout_height="wrap_content"
             android:textColor="#FF38E7ED"
             android:visibility="visible"
+            android:id="@+id/audio_edit_agoratext"
             android:text="点击开始录音"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:id="@+id/audio_edit_playerView"
+            android:minWidth="50dp"
+            android:text="12"
+           android:textAlignment="viewEnd"
+            android:padding="8dp"
+            android:background="@drawable/audioplayback"
+            android:layout_height="35dp"
+            android:gravity="end" />
 
     </LinearLayout>
 
@@ -82,7 +97,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:padding="30dp"
         android:orientation="horizontal">
         <Button
             android:layout_width="wrap_content"
