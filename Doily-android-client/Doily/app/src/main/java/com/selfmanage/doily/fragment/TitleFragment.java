@@ -1,5 +1,6 @@
-package com.selfmanage.doily.activity;
+package com.selfmanage.doily.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -18,6 +19,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.selfmanage.doily.Constant.Constant;
 import com.selfmanage.doily.R;
+import com.selfmanage.doily.activity.clockList;
 import com.selfmanage.doily.entity.Clock;
 
 import java.io.BufferedReader;
@@ -33,7 +35,6 @@ import java.util.List;
 public class TitleFragment extends Fragment {
     private Chronometer mChronometer;
     private EditText editText = null;
-    private Handler handler;
     Button begin = null;
     Button finish = null;
     int current = 0;
@@ -49,7 +50,6 @@ public class TitleFragment extends Fragment {
         editText = view.findViewById(R.id.name);
         setListener();
         initClock();
-
         return view;
     }
 
@@ -76,8 +76,9 @@ public class TitleFragment extends Fragment {
                             Log.e("time", String.valueOf(current));
                             BufferedReader reader = new BufferedReader(in);
                             String info = reader.readLine().toString();
-                            dataSource = new Gson().fromJson(info, new TypeToken<List<Clock>>() {}.getType());
-                            Log.e("list",dataSource.get(2).getDate()+dataSource.toArray().length);
+                            Intent intent = new Intent(getActivity(), clockList.class);
+                            intent.putExtra("clocks", info);
+                            startActivity(intent);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }

@@ -10,10 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.selfmanage.doily.R;
+import com.selfmanage.doily.fragment.TitleFragment;
+import com.selfmanage.doily.fragment.TitleFragment1;
 
 public class concentration extends AppCompatActivity {
     private ImageView back_club=null;

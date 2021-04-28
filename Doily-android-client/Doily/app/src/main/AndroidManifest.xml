@@ -30,6 +30,7 @@
         <activity android:name=".activity.shiftAccount" />
         <activity android:name=".activity.userAccount" />
         <activity android:name=".activity.agoraingActivity" />
+        <activity android:name=".activity.clockList"></activity>
         <activity android:name=".activity.dailyBook"></activity>
         <activity android:name=".activity.noteBook"></activity>
         <activity android:name=".activity.importantDay"></activity>
