@@ -1,6 +1,5 @@
 package com.doily.demo.doily.post.controller;
 
-import com.doily.demo.doily.club.service.ClubService;
 import com.doily.demo.doily.post.service.PostService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -10,7 +10,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @MapperScan("com.doily.demo.mapper")
 @EnableScheduling
 public class DemoApplication {
-
     public static void main(String[] args) {
         CenterService se=new CenterService();
         SpringApplication.run(DemoApplication.class, args);

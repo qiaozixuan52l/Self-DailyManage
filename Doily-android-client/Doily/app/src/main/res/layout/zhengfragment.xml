@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:id="@+id/name"
+        android:text="名称"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_weight="0.5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:background="@drawable/clock"
+        android:layout_weight="1.8">
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           android:layout_height="150dp">
+           <Button
+               android:id="@+id/begin"
+               android:alpha="0.9"
+               android:layout_width="130dp"
+               android:text="开 始"
+               android:textSize="18dp"
+               android:textStyle="bold"
+               android:textColor="#59c1bc"
+               android:background="@drawable/shape2"
+               android:layout_height="55dp" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="15dp" />
+           <Button
+               android:id="@+id/finish"
+               android:alpha="0.9"
+               android:layout_width="130dp"
+               android:text="结 束"
+               android:textSize="18dp"
+               android:textStyle="bold"
+               android:textColor="#59c1bc"
+               android:background="@drawable/shape2"
+               android:layout_height="55dp" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

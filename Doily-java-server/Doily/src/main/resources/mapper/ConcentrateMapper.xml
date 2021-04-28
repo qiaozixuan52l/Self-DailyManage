@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.doily.demo.mapper.ConcentrateMapper">
+
+    <insert id="saveClock"  keyProperty="id" >
+        insert into clock (type,date,time,user,title)
+        values (#{type},#{date},#{time},#{user},#{title})
+    </insert>
+
+    <select id="findClocks" resultType="com.doily.demo.entity.Clock">
+        select * from clock
+    </select>
+</mapper>

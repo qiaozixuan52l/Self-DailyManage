@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="名称"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_weight="0.5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.8">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/clock" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="25 min"
+            android:textSize="20dp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/begin"
+                android:alpha="0.9"
+                android:layout_width="130dp"
+                android:text="开 始"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#59c1bc"
+                android:background="@drawable/shape2"
+                android:layout_gravity="center"
+                android:layout_height="55dp" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/finish"
+                android:alpha="0.9"
+                android:layout_width="130dp"
+                android:text="结 束"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#59c1bc"
+                android:background="@drawable/shape2"
+                android:layout_gravity="center"
+                android:layout_height="55dp" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
